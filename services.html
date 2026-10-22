@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FAROUK</title>
+    <meta name="description" content="Services I offer and how I work." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Outfit:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      try {
+        if (localStorage.getItem("theme") === "dark")
+          document.documentElement.dataset.theme = "dark";
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Home"
+          >FAROUK<span>.</span></a
+        >
+        <nav class="nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li>
+              <a href="services.html" class="active" aria-current="page"
+                >Services</a
+              >
+            </li>
+            <li><a href="portfolio.html">My Work</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="icon-btn theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+          >
+            <svg
+              class="icon i-moon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg
+            ><svg
+              class="icon i-sun"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <path
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              />
+            </svg>
+          </button>
+          <a href="contact.html" class="btn btn-outline header-cta"
+            >Contact
+            <svg
+              class="icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M7 17L17 7M7 7h10v10" /></svg
+          ></a>
+          <button
+            class="icon-btn nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <svg
+              class="icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Tailored digital solutions</p>
+        <h1>My Services</h1>
+        <p class="lead">
+          Every service I offer is aimed at giving you a professional, reliable
+          online presence that supports your business goals, from the first
+          design through to ongoing support.
+        </p>
+      </section>
+      <section class="container">
+        <div class="grid-4">
+          <article class="service-card">
+            <span class="icon-box"
+              ><svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                /></svg
+            ></span>
+            <h3>Web Design</h3>
+            <p>
+              I design clean, user-friendly websites in Figma, then bring them
+              to life in WordPress or Webflow.
+            </p>
+            <a class="read-more" href="#service-1"
+              >Read more
+              <svg
+                class="icon"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7" /></svg
+            ></a>
+          </article>
+          <article class="service-card">
+            <span class="icon-box"
+              ><svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <path d="M12 18h.01" /></svg
+            ></span>
+            <h3>Web Development</h3>
+            <p>
+              I build responsive, functional websites with HTML, CSS and
+              JavaScript that work well on any screen.
+            </p>
+            <a class="read-more" href="#service-2"
+              >Read more
+              <svg
+                class="icon"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7" /></svg
+            ></a>
+          </article>
+          <article class="service-card">
+            <span class="icon-box"
+              ><svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M3 9h18M9 21V9" /></svg
+            ></span>
+            <h3>SEO</h3>
+            <p>
+              I structure and optimise websites so search engines can find them
+              and the right audiences can reach them.
+            </p>
+            <a class="read-more" href="#service-3"
+              >Read more
+              <svg
+                class="icon"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7" /></svg
+            ></a>
+          </article>
+          <article class="service-card">
+            <span class="icon-box"
+              ><svg
+                class="icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" /></svg
+            ></span>
+            <h3>Hosting & Website Maintenance</h3>
+            <p>
+              I help get your site online and keep it reliable with regular
+              updates, upkeep and ongoing support.
+            </p>
+            <a class="read-more" href="#service-4"
+              >Read more
+              <svg
+                class="icon"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7" /></svg
+            ></a>
+          </article>
+        </div>
+        <hr class="rule big" />
+      </section>
+      <section class="container">
+        <div class="section-head">
+          <h2 class="h-serif-md">In-Depth Expertise</h2>
+          <p class="muted">
+            A closer look at what each service covers and how it helps you build
+            and maintain a strong website.
+          </p>
+        </div>
+        <div class="deep-list">
+          <article class="deep-row" id="service-1">
+            <div class="deep-card">
+              <h3>Web Design</h3>
+              <p>
+                Visual design and user experience planned in Figma, then built
+                out in WordPress or Webflow.
+              </p>
+            </div>
+            <div class="offerings">
+              <h4>Core Offerings</h4>
+              <ul>
+                <li>Visual and layout design in Figma</li>
+                <li>User-friendly navigation and structure</li>
+                <li>Responsive layouts for every screen size</li>
+                <li>WordPress site building</li>
+                <li>Webflow site building</li>
+              </ul>
+            </div>
+          </article>
+          <article class="deep-row flip" id="service-2">
+            <div class="offerings">
+              <h4>Core Offerings</h4>
+              <ul>
+                <li>Clean HTML page structure</li>
+                <li>CSS styling and layouts</li>
+                <li>Responsive design for mobile, tablet and desktop</li>
+                <li>Interactive features with JavaScript</li>
+                <li>Forms and navigation menus</li>
+              </ul>
+            </div>
+            <div class="deep-card">
+              <h3>Web Development</h3>
+              <p>
+                Responsive, functional websites built with HTML, CSS and
+                JavaScript.
+              </p>
+            </div>
+          </article>
+          <article class="deep-row" id="service-3">
+            <div class="deep-card">
+              <h3>SEO</h3>
+              <p>
+                On-page optimisation that helps search engines understand your
+                site and helps the right visitors find it.
+              </p>
+            </div>
+            <div class="offerings">
+              <h4>Core Offerings</h4>
+              <ul>
+                <li>Relevant search term targeting</li>
+                <li>On-page optimisation</li>
+                <li>Clear content and heading structure</li>
+                <li>Page titles and meta descriptions</li>
+                <li>Image and page-speed best practices</li>
+              </ul>
+            </div>
+          </article>
+          <article class="deep-row flip" id="service-4">
+            <div class="offerings">
+              <h4>Core Offerings</h4>
+              <ul>
+                <li>Hosting setup where applicable</li>
+                <li>Regular website updates</li>
+                <li>Ongoing website maintenance</li>
+                <li>Performance checks</li>
+                <li>Ongoing support</li>
+              </ul>
+            </div>
+            <div class="deep-card">
+              <h3>Hosting & Website Maintenance</h3>
+              <p>
+                Getting your website online and keeping it updated and running
+                smoothly.
+              </p>
+            </div>
+          </article>
+        </div>
+        <hr class="rule big" />
+      </section>
+      <section class="container">
+        <div class="section-head">
+          <p class="eyebrow">How I Work</p>
+          <h2 class="h-serif-md">My Proven Process</h2>
+        </div>
+        <ol class="grid-4 steps">
+          <li class="step">
+            <span class="step-n">1</span>
+            <h3>1. Discovery</h3>
+            <p>
+              We talk through your goals, audience and needs so the project
+              starts with a clear direction.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step-n">2</span>
+            <h3>2. Design</h3>
+            <p>
+              I turn those ideas into layouts and visuals that are clear,
+              attractive and easy to use.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step-n">3</span>
+            <h3>3. Development</h3>
+            <p>
+              I build the site with HTML, CSS and JavaScript, making sure it
+              works well on every screen.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step-n">4</span>
+            <h3>4. Deployment</h3>
+            <p>
+              Once tested, the site goes live, and I'm available for updates and
+              support afterwards.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="container">
+        <div class="cta-dark">
+          <h2>Ready to start your next project?</h2>
+          <p>
+            Have a website idea, or a site that needs a fresh start? Let's talk
+            about what you need and how I can help bring it to life. Reach out
+            and we'll plan the next step together.
+          </p>
+          <a class="btn btn-light" href="contact.html"
+            >Let's Talk
+            <svg
+              class="icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M12 5l7 7" /></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a href="index.html" class="logo logo-lg" aria-label="Home"
+          >FAROUK<span>.</span></a
+        >
+        <a class="footer-mail" href="mailto:omunenfarouk@gmail.com"
+          ><svg
+            class="icon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="M22 6l-10 7L2 6" />
+          </svg>
+          omunenfarouk19@gmail.com</a
+        >
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> FAROUK. All rights reserved.</p>
+        <div class="social">
+          <a href="#" aria-label="GitHub"
+            ><svg
+              class="icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              /></svg></a
+          ><a href="#" aria-label="Facebook"
+            ><svg
+              class="icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              /></svg></a
+          ><a href="#" aria-label="Instagram"
+            ><svg
+              class="icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <path
+                d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"
+              /></svg></a
+          ><a href="#" aria-label="TikTok"
+            ><svg
+              class="icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 18V5l12-2v13" />
+              <circle cx="6" cy="18" r="3" />
+              <circle cx="18" cy="16" r="3" /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

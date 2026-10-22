@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FAROUK</title>
+    <meta name="description" content="A selection of my latest projects." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Outfit:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      try {
+        if (localStorage.getItem("theme") === "dark")
+          document.documentElement.dataset.theme = "dark";
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Home"
+          >FAROUK<span>.</span></a
+        >
+        <nav class="nav" aria-label="Main">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li>
+              <a href="portfolio.html" class="active" aria-current="page"
+                >My Work</a
+              >
+            </li>
+            <li><a href="contact.html">Contact me</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="icon-btn theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+          >
+            <svg
+              class="icon i-moon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg
+            ><svg
+              class="icon i-sun"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <path
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              />
+            </svg>
+          </button>
+          <a href="contact.html" class="btn btn-outline header-cta"
+            >Contact
+            <svg
+              class="icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M7 17L17 7M7 7h10v10" /></svg
+          ></a>
+          <button
+            class="icon-btn nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <svg
+              class="icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">My portfolio</p>
+        <h1>My Latest Work</h1>
+        <p class="lead">
+          A look at the websites and web apps I design and build, from clean
+          layouts to functional, responsive builds. Browse by category to
+          explore the kind of work I do.
+        </p>
+      </section>
+      <section class="container">
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button
+            class="filter-btn active"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All
+          </button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="webflow"
+            aria-pressed="false"
+          >
+            Webflow
+          </button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="wordpress"
+            aria-pressed="false"
+          >
+            WordPress
+          </button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="code"
+            aria-pressed="false"
+          >
+            Html/CSS/JS
+          </button>
+        </div>
+        <div class="grid-4 projects" id="projects">
+          <article
+            class="project-card"
+            data-category="webflow"
+            tabindex="0"
+            role="button"
+            aria-label="View Project one"
+          >
+            <div
+              class="project-img placeholder-img"
+              role="img"
+              aria-label="Placeholder for Project one image"
+            >
+              <span
+                ><img
+                  src="c:\Users\J0SC0M\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Screenshot 2026-10-22 193235.png"
+                  alt=""
+              /></span>
+            </div>
+            <div class="project-label">
+              <div>
+                <h3>Project one</h3>
+                <p>RISE AND SPEAK</p>
+              </div>
+              <span class="circle-btn"
+                ><svg
+                  class="icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M16 8l-2 6-6 2 2-6z" /></svg
+              ></span>
+            </div>
+          </article>
+          <article
+            class="project-card"
+            data-category="webflow"
+            tabindex="0"
+            role="button"
+            aria-label="View Project two"
+          >
+            <div
+              class="project-img placeholder-img"
+              role="img"
+              aria-label="Placeholder for Project two image"
+            >
+              <span
+                ><img
+                  src="c:\Users\J0SC0M\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Screenshot 2026-10-22 193511.png"
+                  alt=""
+              /></span>
+            </div>
+            <div class="project-label">
+              <div>
+                <h3>Project two</h3>
+                <p>GREEN UGANDA</p>
+              </div>
+              <span class="circle-btn"
+                ><svg
+                  class="icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M16 8l-2 6-6 2 2-6z" /></svg
+              ></span>
+            </div>
+          </article>
+          <article
+            class="project-card"
+            data-category="wordpress"
+            tabindex="0"
+            role="button"
+            aria-label="View Project three"
+          >
+            <div
+              class="project-img placeholder-img"
+              role="img"
+              aria-label="Placeholder for Project three image"
+            >
+              <span
+                ><img
+                  src="c:\Users\J0SC0M\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Screenshot 2026-10-22 194404.png"
+                  alt=""
+              /></span>
+            </div>
+            <div class="project-label">
+              <div>
+                <h3>Project three</h3>
+                <p>Asignment</p>
+              </div>
+              <span class="circle-btn"
+                ><svg
+                  class="icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M16 8l-2 6-6 2 2-6z" /></svg
+              ></span>
+            </div>
+          </article>
+          <article
+            class="project-card"
+            data-category="code"
+            tabindex="0"
+            role="button"
+            aria-label="View Project four"
+          >
+            <div
+              class="project-img placeholder-img"
+              role="img"
+              aria-label="Placeholder for Project four image"
+            >
+              <span
+                ><img
+                  src="c:\Users\J0SC0M\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Screenshot 2026-10-22 194923.png"
+                  alt=""
+              /></span>
+            </div>
+            <div class="project-label">
+              <div>
+                <h3>Project four</h3>
+                <p>CREATIVE SPARK</p>
+              </div>
+              <span class="circle-btn"
+                ><svg
+                  class="icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M16 8l-2 6-6 2 2-6z" /></svg
+              ></span>
+            </div>
+          </article>
+          <article
+            class="project-card"
+            data-category="code"
+            tabindex="0"
+            role="button"
+            aria-label="View Project five"
+          >
+            <div
+              class="project-img placeholder-img"
+              role="img"
+              aria-label="Placeholder for Project five image"
+            >
+              <span
+                ><img
+                  src="c:\Users\J0SC0M\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Screenshot 2026-10-22 200058.png"
+                  alt=""
+              /></span>
+            </div>
+            <div class="project-label">
+              <div>
+                <h3>Project five</h3>
+                <p>SCHOOL WEBSITE</p>
+              </div>
+              <span class="circle-btn"
+                ><svg
+                  class="icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M16 8l-2 6-6 2 2-6z" /></svg
+              ></span>
+            </div>
+          </article>
+          <article
+            class="project-card"
+            data-category="webflow"
+            tabindex="0"
+            role="button"
+            aria-label="View Project six"
+          >
+            <div
+              class="project-img placeholder-img"
+              role="img"
+              aria-label="Placeholder for Project six image"
+            >
+              <span
+                ><img
+                  src="c:\Users\J0SC0M\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Screenshot 2026-10-22 202150.png"
+                  alt=""
+              /></span>
+            </div>
+            <div class="project-label">
+              <div>
+                <h3>Project six</h3>
+                <p>FELLOWSHIP</p>
+              </div>
+              <span class="circle-btn"
+                ><svg
+                  class="icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M16 8l-2 6-6 2 2-6z" /></svg
+              ></span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="container">
+        <div class="cta-light">
+          <div>
+            <h2>Have a project in mind?</h2>
+            <p>
+              If you'd like a website designed and built for your business or
+              idea, I'd love to hear about it. Get in touch and let's talk
+              through your project.
+            </p>
+          </div>
+          <a class="btn btn-green" href="contact.html"
+            >Let's Build Together
+            <svg
+              class="icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M12 5l7 7" /></svg
+          ></a>
+        </div>
+      </section>
+      <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+        <button class="icon-btn modal-close" type="button" aria-label="Close">
+          <svg
+            class="icon"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+        <div
+          class="placeholder-img modal-img"
+          role="img"
+          aria-label="Project image placeholder"
+        >
+          <span
+            ><img
+              src="c:\Users\J0SC0M\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Screenshot 2026-10-22 210408.png"
+              alt=""
+          /></span>
+        </div>
+        <h2 id="modal-title" class="h-sans"></h2>
+        <p class="modal-cat muted"></p>
+        <p>
+          Webflow offers several advantages for users looking to build and
+          manage their websites or online stores without the need for coding
+          skills
+        </p>
+        <a class="btn btn-dark" href="#"
+          >Visit project
+          <svg
+            class="icon"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M7 17L17 7M7 7h10v10" /></svg
+        ></a>
+      </dialog>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a href="index.html" class="logo logo-lg" aria-label="Home"
+          >FAROUK<span>.</span></a
+        >
+        <a class="footer-mail" href="mailto:omunenfarouk@gmail.com"
+          ><svg
+            class="icon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="M22 6l-10 7L2 6" />
+          </svg>
+          omunenfarouk19@gmail.com</a
+        >
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> FAROUK. All rights reserved.</p>
+        <div class="social">
+          <a href="#" aria-label="GitHub"
+            ><svg
+              class="icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              /></svg></a
+          ><a href="#" aria-label="Facebook"
+            ><svg
+              class="icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              /></svg></a
+          ><a href="#" aria-label="Instagram"
+            ><svg
+              class="icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <path
+                d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"
+              /></svg></a
+          ><a href="#" aria-label="TikTok"
+            ><svg
+              class="icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 18V5l12-2v13" />
+              <circle cx="6" cy="18" r="3" />
+              <circle cx="18" cy="16" r="3" /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
